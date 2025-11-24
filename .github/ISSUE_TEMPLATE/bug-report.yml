@@ -64,7 +64,7 @@ body:
     id: windows-version
     attributes:
       label: "Windows版本 | Windows Version"
-      description: "如果你使用了模拟器，请注明模拟器名称与版本 \nIf you are using an emulator, please specify the name and version of the emulator"
+      description: "如果你使用了模拟器，请注明模拟器名称与版本 <br>If you are using an emulator, please specify the name and version of the emulator"
       placeholder: "在命令行输入`cmd /c ver`，把结果粘贴到这里"
     validations:
       required: true
