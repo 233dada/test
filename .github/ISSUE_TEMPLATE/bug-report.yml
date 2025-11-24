@@ -51,20 +51,6 @@ body:
       placeholder: "1920x1080"
     validations:
       required: true
-  - type: input
-    id: windows-version
-    attributes:
-      label: "Windows版本 | Windows Version"
-      placeholder: "在命令行输入`cmd /c ver`，把结果粘贴到这里"
-    validations:
-      required: true
-  - type: input
-    id: aalc-version
-    attributes:
-      label: "AALC版本 | AALC Version"
-      placeholder: "不要输入诸如: `最新版本` 或 `最新版` 之类的内容\nDo not enter content such as: `latest version` or `newest version`"
-    validations:
-      required: true
   - type: checkboxes
     id: simulator-enable-action
     attributes:
@@ -72,6 +58,21 @@ body:
       options:
         - label: 是/Yes
         - label: 否/No
+    validations:
+      required: true
+  - type: input
+    id: windows-version
+    attributes:
+      label: "Windows版本 | Windows Version"
+      description: "如果你使用了模拟器，请注明模拟器名称与版本 If you are using an emulator, please specify the name and version of the emulator"
+      placeholder: "在命令行输入`cmd /c ver`，把结果粘贴到这里"
+    validations:
+      required: true
+  - type: input
+    id: aalc-version
+    attributes:
+      label: "AALC版本 | AALC Version"
+      placeholder: "不要输入诸如:`最新版本`之类的内容\nDo not enter content such as: `latest version` etc."
     validations:
       required: true
   - type: textarea
