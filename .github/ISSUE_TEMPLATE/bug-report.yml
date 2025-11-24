@@ -64,7 +64,7 @@ body:
     id: windows-version
     attributes:
       label: "Windows版本 | Windows Version"
-      description: "如果你使用了模拟器，请注明模拟器名称与版本 If you are using an emulator, please specify the name and version of the emulator"
+      description: "如果你使用了模拟器，请注明模拟器名称与版本 \nIf you are using an emulator, please specify the name and version of the emulator"
       placeholder: "在命令行输入`cmd /c ver`，把结果粘贴到这里"
     validations:
       required: true
@@ -72,7 +72,8 @@ body:
     id: aalc-version
     attributes:
       label: "AALC版本 | AALC Version"
-      placeholder: "不要输入诸如:`最新版本`之类的内容\nDo not enter content such as: `latest version` etc."
+      description: "不要输入诸如:`最新版本`之类的内容 \nDo not enter content such as: `latest version` etc."
+      placeholder: "v1.3.1"
     validations:
       required: true
   - type: textarea
